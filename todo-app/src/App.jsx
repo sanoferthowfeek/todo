@@ -122,7 +122,7 @@ function App() {
               onClick={() => setIsCompletedScreen (false)}>Todo</button>
               <button className={`secondaryBtn ${isCompletedScreen === true && 'active'}`}
             onClick={() => setIsCompletedScreen (true)}>Completed</button>
-            <button className="hov">All</button>
+            
              </div>
              <div className="todo-list">
              {isCompletedScreen === false &&
@@ -136,7 +136,7 @@ function App() {
               <div>
                 <button title="Completed?"
                     className=" check-icon"
-                    onClick={() => handleComplete (index)}>Edit</button>
+                    onClick={() => handleComplete (index)}>Complete</button>
                 <button title="Delete?"
                     className="icon" 
                     onClick={() => handleToDoDelete (index)}>Delete</button>
